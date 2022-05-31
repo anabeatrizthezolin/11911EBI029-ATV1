@@ -12,12 +12,15 @@
 #define STM32_GPIO_MODER_OFFSET   0x0000    // GPIO port mode register 
 #define STM32_GPIO_OTYPER_OFFSET  0x0004    // GPIO port output type register 
 #define STM32_GPIO_PUPDR_OFFSET   0x000c    // GPIO port pull-up/pull-downregister 
+#define STM32_GPIO_ODR_OFFSET     0x0014    // GPIO port output data register 
 #define STM32_GPIO_BSRR_OFFSET 	  0x0018	// GPIO port bit set/reset register
+
 // Enderecos dos registradores ******************************************************
 #define STM32_RCC_AHB1ENR   (STM32_RCC_BASE+STM32_RCC_AHB1ENR_OFFSET)
 #define STM32_GPIOC_MODER   (STM32_GPIOC_BASE+STM32_GPIO_MODER_OFFSET)
 #define STM32_GPIOC_OTYPER  (STM32_GPIOC_BASE+STM32_GPIO_OTYPER_OFFSET)
 #define STM32_GPIOC_PUPDR   (STM32_GPIOC_BASE+STM32_GPIO_PUPDR_OFFSET)
+#define STM32_GPIOC_ODR     (STM32_GPIOC_BASE+STM32_GPIO_ODR_OFFSET)
 #define STM32_GPIOC_BSRR    (STM32_GPIOC_BASE + STM32_GPIO_BSRR_OFFSET)
 
 // AHB1 Registro periférico do Clock 
